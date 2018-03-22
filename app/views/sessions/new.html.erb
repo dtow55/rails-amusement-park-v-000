@@ -1,0 +1,5 @@
+<%= form_tag signin_path, method: "post" do %>
+Username: <%= text_field_tag :"user[name]" %><br>
+Password: <%= text_field_tag :"user[password]" %><br>
+<%= submit_tag :"Sign In" %>
+<% end %>

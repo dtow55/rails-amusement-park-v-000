@@ -48,6 +48,7 @@ describe 'Feature Test: User Signup', :type => :feature do
       height: 50
     )
     visit '/users/1'
+    #binding.pry
     expect(current_path).to eq('/')
     expect(page).to have_content("Sign Up")
   end
